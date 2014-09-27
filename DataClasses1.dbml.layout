@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataClasses1">
+  <DataContextMoniker Name="/DataClasses1DataContext" />
+  <nestedChildShapes>
+    <classShape Id="59a008ec-ef78-461d-8527-14893708868d" absoluteBounds="0.75, 1.375, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/DataClasses1DataContext/MARKA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="27423e73-a527-49ed-94f9-670bf1050f15" absoluteBounds="0.765, 1.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9ea2dbf5-b4cc-48ee-97d3-3102d93c9844" absoluteBounds="3.875, 4, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DataClasses1DataContext/MÜŞTERİ" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cd436cd0-b349-4348-b7f3-e6b9e0da94a1" absoluteBounds="3.89, 4.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a3f38ace-f79d-497b-b5e1-fdc1ae9d0561" absoluteBounds="3.5, 1, 2, 1.9631982421875003">
+      <DataClassMoniker Name="/DataClasses1DataContext/ÜRÜN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b00bc0f1-72aa-44bb-9aed-632406f21156" absoluteBounds="3.515, 1.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.97199625651042); (3.5 : 1.97199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClasses1DataContext/MARKA/MARKA_ÜRÜN" />
+      <nodes>
+        <classShapeMoniker Id="59a008ec-ef78-461d-8527-14893708868d" />
+        <classShapeMoniker Id="a3f38ace-f79d-497b-b5e1-fdc1ae9d0561" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="40a1b907-963b-4401-8d45-3c46de735b35" absoluteBounds="1.25, 3, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/DataClasses1DataContext/PERSONEL" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bc10f90e-4a5f-46bf-87fa-1c588b55cbda" absoluteBounds="1.2650000000000001, 3.46, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="582f2342-f545-404a-b819-96bd6acebfae" absoluteBounds="6.5, 2.125, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/DataClasses1DataContext/SATIŞ" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e87f061e-d7ae-4fab-a085-2d882ea4809e" absoluteBounds="6.515, 2.585, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.875 : 4.23640055338542); (6.5 : 4.23640055338542)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClasses1DataContext/MÜŞTERİ/MÜŞTERİ_SATIŞ" />
+      <nodes>
+        <classShapeMoniker Id="9ea2dbf5-b4cc-48ee-97d3-3102d93c9844" />
+        <classShapeMoniker Id="582f2342-f545-404a-b819-96bd6acebfae" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.25 : 3.46875); (6.5 : 3.46875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClasses1DataContext/PERSONEL/PERSONEL_SATIŞ" />
+      <nodes>
+        <classShapeMoniker Id="40a1b907-963b-4401-8d45-3c46de735b35" />
+        <classShapeMoniker Id="582f2342-f545-404a-b819-96bd6acebfae" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 2.54409912109375); (6.5 : 2.54409912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClasses1DataContext/ÜRÜN/ÜRÜN_SATIŞ" />
+      <nodes>
+        <classShapeMoniker Id="a3f38ace-f79d-497b-b5e1-fdc1ae9d0561" />
+        <classShapeMoniker Id="582f2342-f545-404a-b819-96bd6acebfae" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

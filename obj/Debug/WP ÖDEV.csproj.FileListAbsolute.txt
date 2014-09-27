@@ -1,0 +1,28 @@
+c:\users\muhammed\documents\visual studio 2013\Projects\WP ÖDEV\WP ÖDEV\bin\Debug\WP ÖDEV.exe.config
+C:\Users\Muhammed\Documents\Visual Studio 2013\Projects\WP ÖDEV\WP ÖDEV\bin\Debug\STOK.mdf
+C:\Users\Muhammed\Documents\Visual Studio 2013\Projects\WP ÖDEV\WP ÖDEV\bin\Debug\STOK_log.ldf
+C:\Users\Muhammed\Documents\Visual Studio 2013\Projects\WP ÖDEV\WP ÖDEV\bin\Debug\WP ÖDEV.exe
+C:\Users\Muhammed\Documents\Visual Studio 2013\Projects\WP ÖDEV\WP ÖDEV\bin\Debug\WP ÖDEV.pdb
+C:\Users\Muhammed\Documents\Visual Studio 2013\Projects\WP ÖDEV\WP ÖDEV\obj\Debug\WP ÖDEV.csprojResolveAssemblyReference.cache
+C:\Users\Muhammed\Documents\Visual Studio 2013\Projects\WP ÖDEV\WP ÖDEV\obj\Debug\WP_ÖDEV.Properties.Resources.resources
+C:\Users\Muhammed\Documents\Visual Studio 2013\Projects\WP ÖDEV\WP ÖDEV\obj\Debug\WP ÖDEV.csproj.GenerateResource.Cache
+C:\Users\Muhammed\Documents\Visual Studio 2013\Projects\WP ÖDEV\WP ÖDEV\obj\Debug\WP ÖDEV.exe
+C:\Users\Muhammed\Documents\Visual Studio 2013\Projects\WP ÖDEV\WP ÖDEV\obj\Debug\WP ÖDEV.pdb
+C:\Users\Muhammed\documents\visual studio 2013\Projects\WP ÖDEV\WP ÖDEV\obj\Debug\WP_ÖDEV.Giriş.resources
+C:\Users\Muhammed\documents\visual studio 2013\Projects\WP ÖDEV\WP ÖDEV\obj\Debug\WP_ÖDEV.Personel.resources
+C:\Users\Muhammed\documents\visual studio 2013\Projects\WP ÖDEV\WP ÖDEV\obj\Debug\WP_ÖDEV.Yönetici.resources
+C:\Users\Muhammed\documents\visual studio 2013\Projects\WP ÖDEV\WP ÖDEV\obj\Debug\WP_ÖDEV.Yükleniyor.resources
+C:\Users\Abdullah\Desktop\05100000076_05100000079\WP ÖDEV\WP ÖDEV\bin\Debug\WP ÖDEV.exe.config
+C:\Users\Abdullah\Desktop\05100000076_05100000079\WP ÖDEV\WP ÖDEV\obj\Debug\WP ÖDEV.exe
+C:\Users\Abdullah\Desktop\05100000076_05100000079\WP ÖDEV\WP ÖDEV\obj\Debug\WP ÖDEV.pdb
+C:\Users\Abdullah\Desktop\05100000076_05100000079\WP ÖDEV\WP ÖDEV\bin\Debug\STOK.mdf
+C:\Users\Abdullah\Desktop\05100000076_05100000079\WP ÖDEV\WP ÖDEV\bin\Debug\STOK_log.ldf
+C:\Users\Abdullah\Desktop\05100000076_05100000079\WP ÖDEV\WP ÖDEV\bin\Debug\WP ÖDEV.exe
+C:\Users\Abdullah\Desktop\05100000076_05100000079\WP ÖDEV\WP ÖDEV\bin\Debug\WP ÖDEV.pdb
+C:\Users\Abdullah\Desktop\05100000076_05100000079\WP ÖDEV\WP ÖDEV\obj\Debug\WP ÖDEV.csprojResolveAssemblyReference.cache
+C:\Users\Abdullah\Desktop\05100000076_05100000079\WP ÖDEV\WP ÖDEV\obj\Debug\WP_ÖDEV.Yükleniyor.resources
+C:\Users\Abdullah\Desktop\05100000076_05100000079\WP ÖDEV\WP ÖDEV\obj\Debug\WP_ÖDEV.Personel.resources
+C:\Users\Abdullah\Desktop\05100000076_05100000079\WP ÖDEV\WP ÖDEV\obj\Debug\WP_ÖDEV.Yönetici.resources
+C:\Users\Abdullah\Desktop\05100000076_05100000079\WP ÖDEV\WP ÖDEV\obj\Debug\WP_ÖDEV.Giriş.resources
+C:\Users\Abdullah\Desktop\05100000076_05100000079\WP ÖDEV\WP ÖDEV\obj\Debug\WP_ÖDEV.Properties.Resources.resources
+C:\Users\Abdullah\Desktop\05100000076_05100000079\WP ÖDEV\WP ÖDEV\obj\Debug\WP ÖDEV.csproj.GenerateResource.Cache

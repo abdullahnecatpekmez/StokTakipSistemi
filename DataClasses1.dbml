@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="STOK" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\STOK.mdf;Integrated Security=True;Connect Timeout=30" SettingsObjectName="WP_ÖDEV.Properties.Settings" SettingsPropertyName="STOKConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.MARKA" Member="MARKAs">
+    <Type Name="MARKA">
+      <Column Name="MarkaNO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MarkaAdı" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Association Name="MARKA_ÜRÜN" Member="ÜRÜNs" ThisKey="MarkaNO" OtherKey="MarkaNO" Type="ÜRÜN" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MÜŞTERİ" Member="MÜŞTERİs">
+    <Type Name="MÜŞTERİ">
+      <Column Name="MüşteriTC" Type="System.String" DbType="VarChar(11) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MüşteriAdı" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Telefon" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="Adres" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="MÜŞTERİ_SATIŞ" Member="SATIŞs" ThisKey="MüşteriTC" OtherKey="MüşteriTC" Type="SATIŞ" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ÜRÜN" Member="ÜRÜNs">
+    <Type Name="ÜRÜN">
+      <Column Name="ÜrünNO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MarkaNO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ÜrünAdı" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="AlışFiyat" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="SatışFiyat" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Stok" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="ÜRÜN_SATIŞ" Member="SATIŞs" ThisKey="ÜrünNO" OtherKey="ÜrünNO" Type="SATIŞ" />
+      <Association Name="MARKA_ÜRÜN" Member="MARKA" ThisKey="MarkaNO" OtherKey="MarkaNO" Type="MARKA" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PERSONEL" Member="PERSONELs">
+    <Type Name="PERSONEL">
+      <Column Name="PersonelTC" Type="System.String" DbType="VarChar(11) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PersonelAdı" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Telefon" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="Adres" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Şifre" Type="System.String" DbType="VarChar(16) NOT NULL" CanBeNull="false" />
+      <Column Name="Durum" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="YaptığıSatışSayısı" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SatışlardanEldeEttiğiMiktar" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="PERSONEL_SATIŞ" Member="SATIŞs" ThisKey="PersonelTC" OtherKey="PersonelTC" Type="SATIŞ" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SATIŞ" Member="SATIŞs">
+    <Type Name="SATIŞ">
+      <Column Name="FaturaNO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PersonelTC" Type="System.String" DbType="VarChar(11)" CanBeNull="true" />
+      <Column Name="MüşteriTC" Type="System.String" DbType="VarChar(11)" CanBeNull="true" />
+      <Column Name="ÜrünNO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Tarih" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Fiyat" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Adet" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Durum" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Association Name="MÜŞTERİ_SATIŞ" Member="MÜŞTERİ" ThisKey="MüşteriTC" OtherKey="MüşteriTC" Type="MÜŞTERİ" IsForeignKey="true" />
+      <Association Name="PERSONEL_SATIŞ" Member="PERSONEL" ThisKey="PersonelTC" OtherKey="PersonelTC" Type="PERSONEL" IsForeignKey="true" />
+      <Association Name="ÜRÜN_SATIŞ" Member="ÜRÜN" ThisKey="ÜrünNO" OtherKey="ÜrünNO" Type="ÜRÜN" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
